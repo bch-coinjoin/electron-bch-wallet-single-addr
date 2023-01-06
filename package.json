@@ -1,7 +1,17 @@
 {
   "name": "electron-bch-wallet-single-addr",
   "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "npm run lint",
+    "eject": "react-scripts eject",
+    "lint": "standard --env mocha --fix",
+    "electron": "electron ."
+  },
   "dependencies": {
+    "@capacitor/clipboard": "4.1.0",
     "@chris.troutner/react-jdenticon": "1.0.0",
     "@fortawesome/fontawesome-svg-core": "6.1.2",
     "@fortawesome/free-regular-svg-icons": "6.1.2",
@@ -20,14 +30,9 @@
     "use-local-storage-state": "18.1.0",
     "use-query-params": "1.2.3"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "npm run lint",
-    "eject": "react-scripts eject",
-    "lint": "standard --env mocha --fix",
-    "pub": "node deploy/publish-main.js",
-    "pub:ghp": "./deploy/publish-gh-pages.sh"
+  "devDependencies": {
+    "electron": "22.0.0",
+    "standard": "17.0.0"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,9 +48,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "standard": "17.0.0"
   },
   "release": {
     "publish": [
