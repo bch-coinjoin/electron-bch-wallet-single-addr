@@ -33,6 +33,7 @@
     "react-bootstrap": "2.4.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1",
+    "serve": "^14.1.2",
     "use-local-storage-state": "18.1.0",
     "use-query-params": "1.2.3"
   },
@@ -43,6 +44,7 @@
     "@electron-forge/maker-squirrel": "^6.0.4",
     "@electron-forge/maker-zip": "^6.0.4",
     "electron": "22.0.0",
+    "shelljs": "^0.8.5",
     "standard": "17.0.0"
   },
   "eslintConfig": {
@@ -67,5 +69,6 @@
         "npmPublish": false
       }
     ]
-  }
+  },
+  "homepage": "./"
 }
