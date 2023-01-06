@@ -4,3 +4,5 @@ android/app/src/main/assets/public/
 docs/
 
 .gitsigners
+
+out/
