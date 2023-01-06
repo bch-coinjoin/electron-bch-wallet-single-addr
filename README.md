@@ -10,6 +10,14 @@ npm install
 npm start
 ```
 
+## Development
+You can run the React app separately and develop in a browser, without any use of Electron:
+- `npm run start`
+
+You can build the React app and then run it inside Electron:
+- `npm run build`
+- `npm run electron`
+
 ## Support
 
 Have questions? Need help? Join our community support

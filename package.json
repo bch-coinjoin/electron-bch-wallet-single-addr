@@ -1,7 +1,22 @@
 {
   "name": "electron-bch-wallet-single-addr",
   "version": "1.0.0",
+  "main": "main.js",
+  "description": "BCH wallet",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "build:electron": "electron-forge start",
+    "build": "react-scripts build",
+    "test": "npm run lint",
+    "eject": "react-scripts eject",
+    "lint": "standard --env mocha --fix",
+    "electron": "electron .",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
   "dependencies": {
+    "@capacitor/clipboard": "4.1.0",
     "@chris.troutner/react-jdenticon": "1.0.0",
     "@fortawesome/fontawesome-svg-core": "6.1.2",
     "@fortawesome/free-regular-svg-icons": "6.1.2",
@@ -11,23 +26,26 @@
     "bch-message-lib": "2.2.1",
     "bch-token-sweep": "2.2.1",
     "bootstrap": "5.2.0",
+    "electron-squirrel-startup": "^1.0.0",
     "qrcode.react": "3.1.0",
     "query-string": "7.1.1",
     "react": "18.2.0",
     "react-bootstrap": "2.4.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1",
+    "serve": "^14.1.2",
     "use-local-storage-state": "18.1.0",
     "use-query-params": "1.2.3"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "npm run lint",
-    "eject": "react-scripts eject",
-    "lint": "standard --env mocha --fix",
-    "pub": "node deploy/publish-main.js",
-    "pub:ghp": "./deploy/publish-gh-pages.sh"
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "electron": "22.0.0",
+    "shelljs": "^0.8.5",
+    "standard": "17.0.0"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,9 +62,6 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "standard": "17.0.0"
-  },
   "release": {
     "publish": [
       {
@@ -54,5 +69,6 @@
         "npmPublish": false
       }
     ]
-  }
+  },
+  "homepage": "./"
 }
