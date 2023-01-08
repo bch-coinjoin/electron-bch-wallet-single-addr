@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@capacitor/clipboard": "4.1.0",
+    "@capacitor/core": "4.6.1",
     "@chris.troutner/react-jdenticon": "1.0.0",
     "@fortawesome/fontawesome-svg-core": "6.1.2",
     "@fortawesome/free-regular-svg-icons": "6.1.2",
